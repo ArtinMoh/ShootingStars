@@ -17,6 +17,31 @@
     height: 100vh;
     position: relative;
   }
+
+  div#Bb {
+    background-color: yellow;
+    position: fixed;
+    z-index: 0;
+    display: block;
+    width: 175%;
+    height: 32%;
+    filter: blur(77px);
+    opacity: 0.04;
+    bottom: -20%;
+    left: -16%;
+    border-radius: 100%;
+
+    animation-name: bgglow;
+    animation-duration: 5s;
+    animation-direction: alternate;
+    animation-iteration-count: infinite;
+    animation-delay: 1s;
+    transition: cubic-bezier(0.68, -0.55, 0.27, 1.55);
+}
+@keyframes bgglow{
+    from{background-color: yellow;} /*Can be empty*/
+    to{background-color: #878787;}
+}
   
   /* Centering the Game Elements */
   .start-container {
