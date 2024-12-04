@@ -49,7 +49,7 @@ startButton.addEventListener('click', () => {
   
   timer = setInterval(() => {
 
-    if(timerCount <= 55 && timerCount > 0){
+    if(timerCount <= 10 && timerCount > 0){
         timerDisplay.style.color='#c50000';
     }
 
